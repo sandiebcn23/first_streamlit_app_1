@@ -48,4 +48,4 @@ streamlit.text("The fruit load list contains: ");
 add_my_fruit = streamlit.text_input('What fruit would you like to add?','Jackfruit')
 streamlit.write('Thanks for adding ', add_my_fruit);
 
-my_cur.execute("insert into pc_rivery_db.public.fruit_load_list ('from streamlit')");
+my_cur.execute("insert into pc_rivery_db.public.fruit_load_list values ('from streamlit')");
