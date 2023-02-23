@@ -40,10 +40,10 @@ my_cur = my_cnx.cursor()
 # my_cur.execute("SELECT CURRENT_USER(), CURRENT_ACCOUNT(), CURRENT_REGION()")
 my_cur.execute("SELECT * FROM pc_rivery_db.public.fruit_load_list")
 # my_data_row = my_cur.fetchone()
-my_data_row = my_cur.fetchall()
+# my_data_row = my_cur.fetchall()
 # streamlit.text("Hello from Snowflake:")
 streamlit.text("The fruit load list contains: ");
-streamlit.text(my_data_row)
+# streamlit.text(my_data_row)
 
 add_my_fruit = streamlit.text_input('What fruit would you like to add?','Jackfruit')
 streamlit.write('Thanks for adding ', add_my_fruit);
