@@ -28,6 +28,7 @@ streamlit.text(fruityvice_response.json());
 streamlit.text(fruityvice_response);
 
 # write your own comment - Normzlize response? 
-fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
+# fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
+fruityvice_normalized = requests.get("https://fruityvice.com/api/fruit" + "kiwi");
 # write your own comment - write response to dataframe?
 streamlit.dataframe(fruityvice_normalized)
